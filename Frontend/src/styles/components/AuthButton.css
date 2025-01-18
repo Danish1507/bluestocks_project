@@ -1,0 +1,67 @@
+/* Container for Buttons */
+.auth-buttons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Common Button Styles */
+.auth-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 20px; 
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.auth-button.primary {
+  background-color: #6c63ff; 
+  color: white;
+}
+
+.auth-button.primary:hover {
+  background-color: #554fcf;
+  box-shadow: 0 4px 8px rgba(108, 99, 255, 0.3); 
+}
+
+.auth-button.danger {
+  background-color: #f4f4f4; 
+  color: #5f6368; 
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.auth-button.danger:hover {
+  background-color: #e8e8e8;
+  border-color: #ccc;
+}
+
+.auth-button.danger i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Divider Styles */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  color: #9e9e9e;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+  margin: 0 10px;
+}

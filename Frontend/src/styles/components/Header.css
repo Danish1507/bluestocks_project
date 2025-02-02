@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+}
+
+/* LOGO AND BRAND */
+.name-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px; /* Adjusted for proper scaling */
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.nav-left{
+ display: flex;
+}
+/* NAVIGATION LINKS */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: baseline;
+    padding: 0;
+    margin-left: 40px; /* Pushes links away from logo */
+    margin-top: 15px;
+}
+
+.nav-links li a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: left;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.nav-links li:hover a {
+    color: black;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* RIGHT SECTION */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.signin-link {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: gray;
+}
+
+.signup-btn {
+    background: blue;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; 
 import '../styles/components/Header.css';
 
 const Header = () => {
+    const navigate = useNavigate(); 
+
     return (
         <nav className="navbar">
             <div className="nav-left">
@@ -26,7 +28,9 @@ const Header = () => {
             </div>
             <div className="nav-right">
                 <Link to="/login" className="signin-link">Sign In</Link>
-                <Link to="/signup" className="signup-btn">Sign Up Now</Link>
+                <button className="signup-btn" onClick={() => navigate('/login')}>
+                    Sign Up Now
+                </button>
                 <div className="menu-icon">⋮⋮</div>
             </div>
         </nav>
